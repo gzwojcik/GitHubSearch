@@ -36,7 +36,7 @@ class GitHubSearchTextField: UITextField {
         keyboardType = .default //rodzaj klaw w polu txt
         returnKeyType = .go
 
-        placeholder = "Enter Item(s) to Search For"
+        placeholder = "Enter Item to Search For"
     }
 
 }
