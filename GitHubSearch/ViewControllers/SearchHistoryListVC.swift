@@ -63,12 +63,12 @@ class SearchHistoryListVC: UIViewController {
             do {
                 // Create JSON Decoder
                 let decoder = JSONDecoder()
-//                decoder.keyDecodingStrategy = .convertFromSnakeCase
+
                 // Decode Repo
                 let reposOptional: [FoundRepo]? = try decoder.decode([FoundRepo].self, from: data)
                 if let repos = reposOptional {
                     SearchHistoryListVC.foundRepoList = repos
-                    //print(HistoryListVC.tinyUrlList2)
+                  
                 }
             } catch {
                 print("Unable to Decode SearchHistoryList (\(error))")

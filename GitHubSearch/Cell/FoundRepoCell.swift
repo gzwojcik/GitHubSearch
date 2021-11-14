@@ -29,16 +29,12 @@ class FoundRepoCell: UITableViewCell {
         foundRepoCellNameLabel.text = "Found Repos:\(searchHistoryItem.items[GitVariables.cellNumber].full_name)"
         
         
-        
-        // jak nie dam rady to ustawic "znaleziona rzecz" na sztywno
     }
     
     func setCellName (cellName:String){
         foundRepoCellNameLabel.text = "Found Repos:\(cellName)"
         
         
-        
-        // jak nie dam rady to ustawic "znaleziona rzecz" na sztywno
     }
     
     private func configure(){

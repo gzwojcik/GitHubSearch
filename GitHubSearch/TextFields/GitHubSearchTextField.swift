@@ -13,7 +13,7 @@ class GitHubSearchTextField: UITextField {
 
     override init(frame: CGRect) {
         super.init(frame:frame)
-        // configure trzeba odalic !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        
         configure()
     }
 
