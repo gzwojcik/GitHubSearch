@@ -19,7 +19,7 @@ class NetworkManager {
     
 
     func fetchFoundRepo(longUrl: String, completion: @escaping (Result<FoundRepo, Error>) -> Void) {
-            let baseUrl: String = "https://api.github.com/search/repositories?q="
+         
             let wholeUrl: String = longUrl
             
        

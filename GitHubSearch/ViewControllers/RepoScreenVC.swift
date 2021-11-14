@@ -31,11 +31,12 @@ class RepoScreenVC: UIViewController, WKUIDelegate {
             case .success(let foundRepo):
                 
                 DispatchQueue.main.async {
-                    var myURL = URL(string: self.longUrl) // dummy String po poprawie
-                    var myRequest = URLRequest(url: myURL!)
+                    var myURL:URL! = URL(string: self.longUrl) // automatic unwrap
+
+                    var myRequest = URLRequest(url: myURL)
                     for item in foundRepo.items {
                         myURL = URL(string: item.html_url)// actual String from the Array
-                        myRequest = URLRequest(url: myURL!)
+                        myRequest = URLRequest(url: myURL)
                         SearchHistoryListVC.foundRepoList.append(foundRepo)
                     }
                     
